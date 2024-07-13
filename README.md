@@ -5,7 +5,7 @@
   - [PsychoPy features](#what-can-you-do-with-psychopy)
   - [PsychoPy's possibilities](#possibilities-of-psychopy)
   - [How work with PsychoPy?](#how-can-you-create--conduct-experiments-in-psychopy)
-- [Scripting PsychoPy in your code editor](#conda-scripting-setup)
+- [Scripting PsychoPy in your code editor](#scripting-setup-using-conda)
 
 # Understanding PsychoPy
 
@@ -76,3 +76,5 @@ PsychoPy offers versatile ways to design and conduct experiments from traditiona
    ```bash
    conda activate psychopy-env
    ```
+
+6. start coding
