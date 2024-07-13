@@ -12,3 +12,13 @@ if [ $? -eq 0 ]; then
 else
     echo "Download envionment.yml process failed"
 fi
+
+# Call the setup script
+"${PARENT_DIR}/setup.sh"
+
+if [ $? -eq 0 ]; then
+    # Exit with success status
+    echo "Setup complete. Congratulations! Everything is ready to go."
+else
+    echo "Setup failed"
+fi

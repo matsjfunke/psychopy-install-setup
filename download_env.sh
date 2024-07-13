@@ -16,7 +16,7 @@ fi
 cd "${SCRIPT_DIR}/automatic-psychopy-install"
 
 # Ensure downloads directory exists in the parent script's directory
-mkdir -p "${SCRIPT_DIR}/downloads"
+mkdir -p "${SCRIPT_DIR}/downloads/"
 
 # Move the specific file to the parent script's directory
 mv environment.yml "${SCRIPT_DIR}/downloads/"
