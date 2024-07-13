@@ -5,6 +5,7 @@
   - [PsychoPy features](#what-can-you-do-with-psychopy)
   - [PsychoPy's possibilities](#possibilities-of-psychopy)
   - [How work with PsychoPy?](#how-can-you-create--conduct-experiments-in-psychopy)
+- [Scripting PsychoPy in your code editor](#conda-scripting-setup)
 
 # Understanding PsychoPy
 
@@ -42,3 +43,36 @@ PsychoPy offers versatile ways to design and conduct experiments from traditiona
    - writing Python scripts using PsychoPy libraries, useful for automation and integration into larger workflows.
 4. **Online Studies (PsychoJS):**
    - running experiments in web browsers, facilitating remote data collection and accessibility across different devices.
+
+# Scripting Setup using Conda
+
+1. Prerequisites -> install Conda:
+
+   - on mac : brew install miniconda
+   - on linux / windows (https://docs.conda.io/projects/conda/en/stable/)
+
+2. Create an folder / directory for your PsychoPy projects
+
+   ```bash
+   mkdir your-directory-name
+   cd your-directory-name
+   ```
+
+3. Clone this repo / copy the environment.toml into the directory
+
+   ```bash
+   git clone git@github.com:matsjfunke/automatic-psychopy-install.git
+   cp automatic-psychopy-install/environment.toml path/to/your-directory-name
+   ```
+
+4. Create the Environment from environment.toml
+
+   ```bash
+   conda env create --file environment.toml
+   ```
+
+5. Activate the Environment
+
+   ```bash
+   conda activate psychopy-env
+   ```
