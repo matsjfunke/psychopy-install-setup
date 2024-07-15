@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/zsh
+set -e
 
 # Function to check if a command exists
 command_exists() {
@@ -15,10 +16,10 @@ fi
 
 # Check for git and install if not found
 if ! command_exists git; then
-    echo "git not found. Installing git..."
+    echo "Git not found. Installing git..."
     brew install git
 else
-    echo "git is already installed."
+    echo "Git is already installed."
 fi
 
 # Check for Miniconda and install if not found

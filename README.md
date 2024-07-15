@@ -5,7 +5,7 @@
   - [PsychoPy features](#what-can-you-do-with-psychopy)
   - [PsychoPy's possibilities](#possibilities-of-psychopy)
   - [How work with PsychoPy?](#how-can-you-create--conduct-experiments-in-psychopy)
-- [Scripting PsychoPy in your code editor](#scripting-setup-using-conda)
+- [PsychoPy in your code editor](#scripting-setup-using-conda-in-your-own-editor)
 
 ---
 
@@ -48,37 +48,59 @@ PsychoPy offers versatile ways to design and conduct experiments from traditiona
 
 ---
 
-# Scripting Setup using Conda
+# Scripting Setup using Conda in your own Editor
 
-1. Prerequisites -> install Conda:
+## Easy Install
+
+```bash
+# clone this repo
+git clone https://github.com/matsjfunke/psychopy-install-setup.git
+# move into directory
+cd psychopy-install-setup
+# enable the main_script.zsh
+chmod 755 ./main_script.sh
+# activate the environment:
+conda activate psychopy-env`
+# test the activation by running test experiment:
+python basic.py
+# deactivate it with:
+conda deactivate
+```
+
+## Manual Install
+
+1. Prerequisites
+   homebrew not necessary but makes things easier
+   Git
+   Conda:
 
    - on mac : brew install miniconda
    - on linux / windows (https://docs.conda.io/projects/conda/en/stable/)
 
 2. Create an folder / directory for your PsychoPy projects
 
-   ```bash
-   mkdir your-directory-name
-   cd your-directory-name
-   ```
+```bash
+mkdir your-directory-name
+```
 
-3. Clone this repo / copy the environment.yml into the directory
+3. Clone this repo or copy the environment.yml into the directory
 
-   ```bash
-   git clone git@github.com:matsjfunke/automatic-psychopy-install.git
-   cp automatic-psychopy-install/environment.yml path/to/your-directory-name
-   ```
+```bash
+git clone https://github.com/matsjfunke/psychopy-install-setup.git
+cp psychopy-install-setup/environment.yml path/to/your-directory-name
+cd your-directory-name
+```
 
 4. Create the Environment from environment.yml
 
-   ```bash
-   conda env create --file environment.yml
-   ```
+```bash
+conda env create --file environment.yml
+```
 
 5. Activate the Environment
 
-   ```bash
-   conda activate psychopy-env
-   ```
+```bash
+conda activate psychopy-env
+```
 
-6. start coding
+6. start coding your own experiment
