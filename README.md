@@ -52,18 +52,27 @@ PsychoPy offers versatile ways to design and conduct experiments from traditiona
 
 ## Easy Install
 
+
+1. clone this repo & move into directory
 ```bash
-# clone this repo
 git clone https://github.com/matsjfunke/psychopy-install-setup.git
-# move into directory
 cd psychopy-install-setup
-# enable the main_script.zsh
+```
+2.  enable the main_script.zsh
+```bash
 chmod 755 ./main_script.sh
-# activate the environment:
-conda activate psychopy-env`
-# test the activation by running test experiment:
+```
+3. activate the environment:
+```bash
+conda activate psychopy-env
+```
+4. test the activation by running test experiment:
+```bash
 python basic.py
-# deactivate it with:
+```
+5. now you're able to code psychopy in your own code editor
+6. deactivate the environnment with:
+```bash
 conda deactivate
 ```
 
