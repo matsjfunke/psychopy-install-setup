@@ -50,27 +50,31 @@ PsychoPy offers versatile ways to design and conduct experiments from traditiona
 
 # Scripting Setup using Conda in your own Editor
 
-## Easy Install
-
+## Easy Install (for mac)
 
 1. clone this repo & move into directory
 ```bash
 git clone https://github.com/matsjfunke/psychopy-install-setup.git
 cd psychopy-install-setup
 ```
+
 2.  enable the main_script.zsh
 ```bash
 chmod 755 ./main_script.sh
 ```
+
 3. activate the environment:
 ```bash
 conda activate psychopy-env
 ```
+
 4. test the activation by running test experiment:
 ```bash
-python basic.py
+python stroop.py
 ```
+
 5. now you're able to code psychopy in your own code editor
+
 6. deactivate the environnment with:
 ```bash
 conda deactivate

@@ -6,7 +6,7 @@ PARENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # Ensure scripts are executable
 chmod 755 "${PARENT_DIR}/install_dependencies.zsh"
-chmod 755 "${PARENT_DIR}/activate_env.zsh"
+chmod 755 "${PARENT_DIR}/create_env.zsh"
 
 # Call the setup script
 "${PARENT_DIR}/install_dependencies.zsh"
@@ -20,7 +20,7 @@ else
 fi
 
 # Call the activate_env.sh script
-"${PARENT_DIR}/activate_env.zsh"
+"${PARENT_DIR}/create_env.zsh"
 
 # Check exit status of the activate_env.sh script
 if [ $? -eq 0 ]; then

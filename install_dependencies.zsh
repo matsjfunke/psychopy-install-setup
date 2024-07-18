@@ -14,14 +14,6 @@ else
     echo "Homebrew is already installed."
 fi
 
-# Check for git and install if not found
-if ! command_exists git; then
-    echo "Git not found. Installing git..."
-    brew install git
-else
-    echo "Git is already installed."
-fi
-
 # Check for Miniconda and install if not found
 if ! command_exists conda; then
     echo "Miniconda not found. Installing Miniconda..."
